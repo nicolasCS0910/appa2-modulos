@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+ xmlns:gap = "http://phonegap.com/ns/1.0"
+ id = "com.phonegap.app2"
+ version = "1.0.0">
+ 
+ <name> app2-2019 Datos del Dispositivo </name>
+ 
+ <description>
+  Aplicacion que nos muestra la informacion sobre la especialidad de tecnico en Programacion CBTis
+  </description>
+  
+  <author href="https://build.phonegap.com" email="nsanchezcuellar84@gmail.com">
+   Nicolas Sanchez Cuellar
+   </author>
+   
+   <!-- Personaliza la aplicacion y plataforma -->
+   <preference name="orientation"  value="default"/>
+   <!-- <preference name="orientation"  value="portrait" />
+   <preference name="orientation"  value="landscape" />-->
+   <preference name="target-device"  value="universal"/>
+   <preference name="fullscreen"  value="true"/>
+   <preference name="android-installLocation"  value="auto"/>
+   <preference name="permissions"  value="INTERNET"/>
+   
+   <!--Plugins-->
+   <plugin name="cordova-plugin-device" spec="~1.1.4"/>
+    <plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+	 <plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+	  
+	  <!--Prara accesar a paginas en internet-->
+	  <allow-intent href="https://*/*"/>
+	  <acces origin="https://*/*"/>
+	  <allow-intent href="http://*/*"/>
+	  <acces origin="http://*/*"/>
+	  <plugin name="cordova-plugin-whitelist" source="npm"/>
+	 
+	  <!-- Colocar icono app -->
+	  <icon src="imagenes/person_black.png"/>
+	 
+	 </widget>
